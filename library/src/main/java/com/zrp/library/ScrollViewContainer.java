@@ -61,7 +61,7 @@ public class ScrollViewContainer extends FrameLayout {
     //Timer默认的时间间隔
     private static final long DEFAULT_PERIOD = 2;
     private static final int MOVE_TO_TOP_BUTTON_MARGIN_RIGHT_DE_VALUE = 20;
-    private static final int MOVE_TO_TOP_BUTTON_MARGIN_BOTTOM_DE_VALUE = 140;
+    private static final int MOVE_TO_TOP_BUTTON_MARGIN_BOTTOM_DE_VALUE = 30;
     private int move_to_top_view_margin_right;
     private int move_to_top_view_margin_bottom;
     private ScrollEndListener scrollEndListener;

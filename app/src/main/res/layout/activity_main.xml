@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -67,7 +67,8 @@
         android:id="@+id/sv_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/ll_good_detail">
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="58dp">
 
         <include layout="@layout/layout_top" />
 
@@ -204,4 +205,4 @@
         </LinearLayout>
 
     </LinearLayout>
-</RelativeLayout>
+</FrameLayout>
