@@ -29,14 +29,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:singleLine="true"
-                android:text="日本卡乐比Calbee Jagabee 薯条三兄弟 淡盐味" />
+                android:text="@string/product_name" />
 
             <TextView
                 style="@style/blackTextStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_tinyer"
-                android:text="90g/包" />
+                android:text="@string/product_unit" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -47,7 +47,7 @@
                     style="@style/colorPrimaryTextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="48元" />
+                    android:text="@string/product_price" />
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
@@ -84,7 +84,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="快递：12.00" />
+                    android:text="@string/product_ems" />
 
                 <TextView
                     style="@style/greyTextStyleSmaller"
@@ -92,7 +92,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="1321人付款" />
+                    android:text="@string/product_pay_num" />
 
                 <TextView
                     style="@style/greyTextStyleSmaller"
@@ -100,7 +100,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="right"
-                    android:text="日本大阪" />
+                    android:text="@string/product_address" />
             </LinearLayout>
 
         </LinearLayout>
@@ -122,7 +122,7 @@
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/da_ren_services_tick"
                 android:drawablePadding="@dimen/spacing_tiny"
-                android:text="担保交易"
+                android:text="@string/product_pay_secure"
                 android:textSize="@dimen/font_smaller" />
 
             <TextView
@@ -131,7 +131,7 @@
                 android:layout_marginLeft="@dimen/spacing_smaller"
                 android:drawableLeft="@drawable/da_ren_services_tick"
                 android:drawablePadding="@dimen/spacing_tiny"
-                android:text="正品保障"
+                android:text="@string/product_true"
                 android:textSize="@dimen/font_smaller" />
 
             <TextView
@@ -140,7 +140,7 @@
                 android:layout_marginLeft="@dimen/spacing_smaller"
                 android:drawableLeft="@drawable/da_ren_services_tick"
                 android:drawablePadding="@dimen/spacing_tiny"
-                android:text="赔运费险"
+                android:text="@string/product_insurance_expenses"
                 android:textSize="@dimen/font_smaller" />
 
             <TextView
@@ -150,7 +150,7 @@
                 android:layout_weight="1"
                 android:drawableLeft="@drawable/da_ren_services_tick"
                 android:drawablePadding="@dimen/spacing_tiny"
-                android:text="7天退换"
+                android:text="@string/product_sale_return"
                 android:textSize="@dimen/font_smaller" />
 
             <ImageView
@@ -177,7 +177,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/spacing_large"
-                android:text="满299元或两件包邮"
+                android:text="@string/product_free_delivery"
                 android:textSize="@dimen/font_small" />
         </LinearLayout>
 
@@ -220,7 +220,7 @@
             android:layout_height="wrap_content"
             android:drawableRight="@drawable/rightarrow"
             android:padding="@dimen/spacing_small"
-            android:text="选择  产品分类" />
+            android:text="@string/product_select_class" />
 
         <View
             android:layout_width="match_parent"
@@ -262,7 +262,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="谢依霖" />
+                            android:text="@string/product_star" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -299,20 +299,20 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/spacing_tinyest"
-                        android:text="2016年04月" />
+                        android:text="@string/product_time" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/spacing_tinyest"
-                        android:text="第二次来找这个零食了，第一次吃就开始爱上了，还是跟原来一样的味道" />
+                        android:text="@string/product_comment_detail" />
 
                     <TextView
                         style="@style/greyTextStyleSmall"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/spacing_tinyest"
-                        android:text="颜色分类：原味" />
+                        android:text="@string/product_color_class" />
 
                 </LinearLayout>
 

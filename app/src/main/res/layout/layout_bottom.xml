@@ -20,7 +20,7 @@
         <TextView
             android:background="@drawable/list_gray_item"
             android:drawableRight="@drawable/rightarrow"
-            android:text="安全交易"
+            android:text="@string/sale_secure"
             android:padding="@dimen/spacing_small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -28,7 +28,7 @@
         <TextView
             android:background="@drawable/list_gray_item"
             android:drawableRight="@drawable/rightarrow"
-            android:text="免责声明"
+            android:text="@string/sale_free_argument"
             android:padding="@dimen/spacing_small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -36,7 +36,7 @@
         <TextView
             android:background="@drawable/list_gray_item"
             android:drawableRight="@drawable/rightarrow"
-            android:text="交易担保"
+            android:text="@string/product_pay_secure"
             android:padding="@dimen/spacing_small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -44,11 +44,84 @@
         <TextView
             android:background="@drawable/list_gray_item"
             android:drawableRight="@drawable/rightarrow"
-            android:text="我要入驻"
+            android:text="@string/sale_enter"
             android:padding="@dimen/spacing_small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <include layout="@layout/layout_line"/>
+        <TextView
+            android:background="@drawable/list_gray_item"
+            android:drawableRight="@drawable/rightarrow"
+            android:text="@string/sale_enter"
+            android:padding="@dimen/spacing_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <include layout="@layout/layout_line"/>
+        <TextView
+            android:background="@drawable/list_gray_item"
+            android:drawableRight="@drawable/rightarrow"
+            android:text="@string/sale_enter"
+            android:padding="@dimen/spacing_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <include layout="@layout/layout_line"/>
+        <TextView
+            android:background="@drawable/list_gray_item"
+            android:drawableRight="@drawable/rightarrow"
+            android:text="@string/sale_enter"
+            android:padding="@dimen/spacing_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <include layout="@layout/layout_line"/>
+        <TextView
+            android:background="@drawable/list_gray_item"
+            android:drawableRight="@drawable/rightarrow"
+            android:text="@string/sale_enter"
+            android:padding="@dimen/spacing_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <include layout="@layout/layout_line"/> <TextView
+        android:background="@drawable/list_gray_item"
+        android:drawableRight="@drawable/rightarrow"
+        android:text="@string/sale_enter"
+        android:padding="@dimen/spacing_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <include layout="@layout/layout_line"/>
+        <TextView
+            android:background="@drawable/list_gray_item"
+            android:drawableRight="@drawable/rightarrow"
+            android:text="@string/sale_enter"
+            android:padding="@dimen/spacing_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <include layout="@layout/layout_line"/> <TextView
+        android:background="@drawable/list_gray_item"
+        android:drawableRight="@drawable/rightarrow"
+        android:text="@string/sale_enter"
+        android:padding="@dimen/spacing_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <include layout="@layout/layout_line"/>
+        <TextView
+            android:background="@drawable/list_gray_item"
+            android:drawableRight="@drawable/rightarrow"
+            android:text="@string/sale_enter"
+            android:padding="@dimen/spacing_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <include layout="@layout/layout_line"/>
+        <TextView
+            android:background="@drawable/list_gray_item"
+            android:drawableRight="@drawable/rightarrow"
+            android:text="@string/sale_enter"
+            android:padding="@dimen/spacing_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <include layout="@layout/layout_line"/>
+
+
+
 
 
         <RelativeLayout
@@ -70,7 +143,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:text="已经最到底啦!"
+                android:text="@string/end"
                 android:textSize="@dimen/font_small" />
 
             <View

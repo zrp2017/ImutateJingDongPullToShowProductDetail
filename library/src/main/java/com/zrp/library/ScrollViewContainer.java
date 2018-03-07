@@ -105,9 +105,7 @@ public class ScrollViewContainer extends FrameLayout {
                         if (ivMoveToTop.getVisibility() != VISIBLE) {
                             ivMoveToTop.setVisibility(VISIBLE);
                         }
-                        if (scrollEndListener != null) {
-                            scrollEndListener.onScrollEnd();
-                        }
+                        scrollCallback();
                     }
                     mMoveLen = -mViewHeight;
                     state = DONE;
@@ -121,6 +119,9 @@ public class ScrollViewContainer extends FrameLayout {
 //                                    启动topView内容滑到顶部的动画
                         startScrollToTopAnimation();
                         mCurrentViewIndex = 0;
+                        //隐藏ivMoveToTop
+                        ivMoveToTop.setVisibility(GONE);
+                        scrollCallback();
                     }
                     state = DONE;
                     isTuninginterface = false;
@@ -132,37 +133,18 @@ public class ScrollViewContainer extends FrameLayout {
         }
     }
 
+    private void scrollCallback() {
+        if (scrollEndListener != null) {
+            scrollEndListener.onScrollEnd();
+        }
+    }
+
     private void startScrollToTopAnimation() {
         ValueAnimator animator = ValueAnimator.ofInt(topView.getScrollY(), 0);
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator valueAnimator) {
                 topView.setScrollY((Integer) valueAnimator.getAnimatedValue());
-            }
-        });
-        animator.addListener(new Animator.AnimatorListener() {
-            @Override
-            public void onAnimationStart(Animator animator) {
-
-            }
-
-            @Override
-            public void onAnimationEnd(Animator animator) {
-                //滑动动画结束后，隐藏ivMoveToTop
-                ivMoveToTop.setVisibility(GONE);
-                if (scrollEndListener != null) {
-                    scrollEndListener.onScrollEnd();
-                }
-            }
-
-            @Override
-            public void onAnimationCancel(Animator animator) {
-
-            }
-
-            @Override
-            public void onAnimationRepeat(Animator animator) {
-
             }
         });
         animator.setDuration(1000).setInterpolator(new DecelerateInterpolator());
@@ -197,7 +179,6 @@ public class ScrollViewContainer extends FrameLayout {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        Log.d("zeng", "----mMoveLen:  " + mMoveLen + " -------MotionEvent----------- ");
         switch (ev.getActionMasked()) {
             case MotionEvent.ACTION_DOWN:
                 if (vt == null) {
@@ -206,7 +187,6 @@ public class ScrollViewContainer extends FrameLayout {
                     vt.clear();
                 }
                 mLastY = ev.getY();
-                System.out.println("---ACTION_DOWN-mLastY------" + ev.getY());
                 vt.addMovement(ev);
                 mEvents = 0;
                 break;
@@ -309,10 +289,7 @@ public class ScrollViewContainer extends FrameLayout {
     public void moveToUp(View v) {
         isTuninginterface = true;
         state = AUTO_DOWN;
-        Log.d("zeng", "mMoveLen+++++++++++" + mMoveLen);
-        Log.d("zeng", "mMoveLen+++++++++++ top : " + topView.getTop());
         mMoveLen = topView.getTop();
-        Log.d("zeng", "mMoveLen+++++++++++" + mMoveLen + "----------------");
         mTimer.schedule(DEFAULT_PERIOD);
     }
 

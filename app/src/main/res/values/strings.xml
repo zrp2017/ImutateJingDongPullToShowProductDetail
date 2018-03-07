@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">仿京东商品详情</string>
+    <string name="product">商品</string>
+    <string name="detail">详情</string>
+    <string name="comment">评价</string>
+    <string name="product_name">日本卡乐比Calbee Jagabee 薯条三兄弟 淡盐味</string>
+    <string name="product_unit">90g/包</string>
+    <string name="product_price">48元</string>
+    <string name="product_ems">快递：12.00</string>
+    <string name="product_pay_num">1321人付款</string>
+    <string name="product_address">日本大阪</string>
+    <string name="product_pay_secure">担保交易</string>
+    <string name="product_true">正品保障</string>
+    <string name="product_insurance_expenses">赔运费险</string>
+    <string name="product_sale_return">7天退换</string>
+    <string name="product_free_delivery">满299元或两件包邮</string>
+    <string name="product_select_class">选择  产品分类</string>
+    <string name="product_star">谢依霖</string>
+    <string name="product_time">2016年04月</string>
+    <string name="product_comment_detail"> 第二次来找这个零食了，第一次吃就开始爱上了，还是跟原来一样的味道</string>
+    <string name="product_color_class">颜色分类：原味</string>
+
+    <string name="sale_secure">安全交易</string>
+    <string name="sale_free_argument">免责声明</string>
+    <string name="sale_enter">我要入驻</string>
+    <string name="end">已经最到底啦</string>
+
 </resources>
